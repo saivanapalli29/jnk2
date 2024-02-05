@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        MYUSERPASS = credentials("test-user-pass")
-    }
     stages {
         stage("Test") {
             steps {
