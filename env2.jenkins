@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        SAMPLE_ENV = "credentials('simple-secret-text')"
+        SAMPLE_ENV = "credentials simple-secret-text."
     }
     stages {
         stage("Release") {
